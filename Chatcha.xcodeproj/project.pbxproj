@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81174CF01E574ECC00C8A01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174CEF1E574ECC00C8A01D /* AppDelegate.swift */; };
+		81174CF21E574ECC00C8A01D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174CF11E574ECC00C8A01D /* ViewController.swift */; };
+		81174CF51E574ECC00C8A01D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81174CF31E574ECC00C8A01D /* Main.storyboard */; };
+		81174CF71E574ECC00C8A01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81174CF61E574ECC00C8A01D /* Assets.xcassets */; };
+		81174CFA1E574ECC00C8A01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81174CF81E574ECC00C8A01D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81174CEC1E574ECC00C8A01D /* Chatcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81174CEF1E574ECC00C8A01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81174CF11E574ECC00C8A01D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81174CF41E574ECC00C8A01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81174CF61E574ECC00C8A01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81174CF91E574ECC00C8A01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81174CFB1E574ECC00C8A01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81174CE91E574ECC00C8A01D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81174CE31E574ECC00C8A01D = {
+			isa = PBXGroup;
+			children = (
+				81174CEE1E574ECC00C8A01D /* Chatcha */,
+				81174CED1E574ECC00C8A01D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81174CED1E574ECC00C8A01D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81174CEC1E574ECC00C8A01D /* Chatcha.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81174CEE1E574ECC00C8A01D /* Chatcha */ = {
+			isa = PBXGroup;
+			children = (
+				81174CEF1E574ECC00C8A01D /* AppDelegate.swift */,
+				81174CF11E574ECC00C8A01D /* ViewController.swift */,
+				81174CF31E574ECC00C8A01D /* Main.storyboard */,
+				81174CF61E574ECC00C8A01D /* Assets.xcassets */,
+				81174CF81E574ECC00C8A01D /* LaunchScreen.storyboard */,
+				81174CFB1E574ECC00C8A01D /* Info.plist */,
+			);
+			path = Chatcha;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81174CEB1E574ECC00C8A01D /* Chatcha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81174CFE1E574ECC00C8A01D /* Build configuration list for PBXNativeTarget "Chatcha" */;
+			buildPhases = (
+				81174CE81E574ECC00C8A01D /* Sources */,
+				81174CE91E574ECC00C8A01D /* Frameworks */,
+				81174CEA1E574ECC00C8A01D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chatcha;
+			productName = Chatcha;
+			productReference = 81174CEC1E574ECC00C8A01D /* Chatcha.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81174CE41E574ECC00C8A01D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Restructural;
+				TargetAttributes = {
+					81174CEB1E574ECC00C8A01D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EWNAZS58Y2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 81174CE71E574ECC00C8A01D /* Build configuration list for PBXProject "Chatcha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81174CE31E574ECC00C8A01D;
+			productRefGroup = 81174CED1E574ECC00C8A01D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81174CEB1E574ECC00C8A01D /* Chatcha */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81174CEA1E574ECC00C8A01D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81174CFA1E574ECC00C8A01D /* LaunchScreen.storyboard in Resources */,
+				81174CF71E574ECC00C8A01D /* Assets.xcassets in Resources */,
+				81174CF51E574ECC00C8A01D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81174CE81E574ECC00C8A01D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81174CF21E574ECC00C8A01D /* ViewController.swift in Sources */,
+				81174CF01E574ECC00C8A01D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81174CF31E574ECC00C8A01D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81174CF41E574ECC00C8A01D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81174CF81E574ECC00C8A01D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81174CF91E574ECC00C8A01D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81174CFC1E574ECC00C8A01D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81174CFD1E574ECC00C8A01D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81174CFF1E574ECC00C8A01D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWNAZS58Y2;
+				INFOPLIST_FILE = Chatcha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Restructural.Chatcha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		81174D001E574ECC00C8A01D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWNAZS58Y2;
+				INFOPLIST_FILE = Chatcha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Restructural.Chatcha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81174CE71E574ECC00C8A01D /* Build configuration list for PBXProject "Chatcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81174CFC1E574ECC00C8A01D /* Debug */,
+				81174CFD1E574ECC00C8A01D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81174CFE1E574ECC00C8A01D /* Build configuration list for PBXNativeTarget "Chatcha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81174CFF1E574ECC00C8A01D /* Debug */,
+				81174D001E574ECC00C8A01D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81174CE41E574ECC00C8A01D /* Project object */;
+}
