@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		81174CF01E574ECC00C8A01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174CEF1E574ECC00C8A01D /* AppDelegate.swift */; };
-		81174CF21E574ECC00C8A01D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174CF11E574ECC00C8A01D /* ViewController.swift */; };
-		81174CF51E574ECC00C8A01D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81174CF31E574ECC00C8A01D /* Main.storyboard */; };
+		81174CF21E574ECC00C8A01D /* OLD-ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174CF11E574ECC00C8A01D /* OLD-ViewController.swift */; };
 		81174CF71E574ECC00C8A01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81174CF61E574ECC00C8A01D /* Assets.xcassets */; };
 		81174CFA1E574ECC00C8A01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81174CF81E574ECC00C8A01D /* LaunchScreen.storyboard */; };
+		81174D021E57515800C8A01D /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174D011E57515800C8A01D /* PreviewView.swift */; };
+		81174D051E57516100C8A01D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174D031E57516100C8A01D /* CameraViewController.swift */; };
+		81174D061E57516100C8A01D /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81174D041E57516100C8A01D /* PhotoCaptureDelegate.swift */; };
+		81174D081E57517000C8A01D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81174D071E57517000C8A01D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81174CEC1E574ECC00C8A01D /* Chatcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81174CEF1E574ECC00C8A01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81174CF11E574ECC00C8A01D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		81174CF41E574ECC00C8A01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81174CF11E574ECC00C8A01D /* OLD-ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OLD-ViewController.swift"; sourceTree = "<group>"; };
 		81174CF61E574ECC00C8A01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81174CF91E574ECC00C8A01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81174CFB1E574ECC00C8A01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81174D011E57515800C8A01D /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		81174D031E57516100C8A01D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		81174D041E57516100C8A01D /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		81174D071E57517000C8A01D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		81174CEE1E574ECC00C8A01D /* Chatcha */ = {
 			isa = PBXGroup;
 			children = (
-				81174CEF1E574ECC00C8A01D /* AppDelegate.swift */,
-				81174CF11E574ECC00C8A01D /* ViewController.swift */,
-				81174CF31E574ECC00C8A01D /* Main.storyboard */,
+				81174D0E1E575C1F00C8A01D /* Controller */,
+				81174D0D1E575C1800C8A01D /* View */,
+				81174D0C1E575C0E00C8A01D /* Model */,
+				81174D0B1E575BFA00C8A01D /* Protocols */,
+				81174CF11E574ECC00C8A01D /* OLD-ViewController.swift */,
+				81174D071E57517000C8A01D /* Main.storyboard */,
 				81174CF61E574ECC00C8A01D /* Assets.xcassets */,
 				81174CF81E574ECC00C8A01D /* LaunchScreen.storyboard */,
 				81174CFB1E574ECC00C8A01D /* Info.plist */,
 			);
 			path = Chatcha;
+			sourceTree = "<group>";
+		};
+		81174D0B1E575BFA00C8A01D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				81174D041E57516100C8A01D /* PhotoCaptureDelegate.swift */,
+				81174CEF1E574ECC00C8A01D /* AppDelegate.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		81174D0C1E575C0E00C8A01D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		81174D0D1E575C1800C8A01D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81174D011E57515800C8A01D /* PreviewView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		81174D0E1E575C1F00C8A01D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81174D031E57516100C8A01D /* CameraViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +167,7 @@
 			files = (
 				81174CFA1E574ECC00C8A01D /* LaunchScreen.storyboard in Resources */,
 				81174CF71E574ECC00C8A01D /* Assets.xcassets in Resources */,
-				81174CF51E574ECC00C8A01D /* Main.storyboard in Resources */,
+				81174D081E57517000C8A01D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81174CF21E574ECC00C8A01D /* ViewController.swift in Sources */,
+				81174CF21E574ECC00C8A01D /* OLD-ViewController.swift in Sources */,
+				81174D051E57516100C8A01D /* CameraViewController.swift in Sources */,
 				81174CF01E574ECC00C8A01D /* AppDelegate.swift in Sources */,
+				81174D061E57516100C8A01D /* PhotoCaptureDelegate.swift in Sources */,
+				81174D021E57515800C8A01D /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		81174CF31E574ECC00C8A01D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81174CF41E574ECC00C8A01D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81174CF81E574ECC00C8A01D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

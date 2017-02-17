@@ -184,7 +184,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			var defaultVideoDevice: AVCaptureDevice?
 			
 			// Choose the back dual camera if available, otherwise default to a wide angle camera.
-			if let dualCameraDevice = AVCaptureDevice.defaultDevice(withDeviceType: .builtInDuoCamera, mediaType: AVMediaTypeVideo, position: .back) {
+			if let dualCameraDevice = AVCaptureDevice.defaultDevice(withDeviceType: .builtInDualCamera, mediaType: AVMediaTypeVideo, position: .back) {
 				defaultVideoDevice = dualCameraDevice
 			}
 			else if let backCameraDevice = AVCaptureDevice.defaultDevice(withDeviceType: .builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: .back) {
@@ -303,8 +303,8 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 	}
 	
 	private enum CaptureMode: Int {
-		case photo = 0
-		case movie = 1
+		case photo = 1
+		case movie = 0
 	}
 
 	@IBOutlet private weak var captureModeControl: UISegmentedControl!
@@ -370,7 +370,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 	
 	@IBOutlet private weak var cameraUnavailableLabel: UILabel!
 	
-	private let videoDeviceDiscoverySession = AVCaptureDeviceDiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDuoCamera], mediaType: AVMediaTypeVideo, position: .unspecified)!
+	private let videoDeviceDiscoverySession = AVCaptureDeviceDiscoverySession(deviceTypes: [.builtInWideAngleCamera, .builtInDualCamera], mediaType: AVMediaTypeVideo, position: .unspecified)!
 	
 	@IBAction private func changeCamera(_ cameraButton: UIButton) {
 		cameraButton.isEnabled = false
@@ -389,7 +389,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			switch currentPosition {
 				case .unspecified, .front:
 					preferredPosition = .back
-					preferredDeviceType = .builtInDuoCamera
+					preferredDeviceType = .builtInDualCamera
 				
 				case .back:
 					preferredPosition = .front
@@ -598,10 +598,10 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			
 			DispatchQueue.main.async { [unowned self] in
 				if livePhotoMode == .on {
-					self.livePhotoModeButton.setTitle(NSLocalizedString("Live Photo Mode: On", comment: "Live photo mode button on title"), for: [])
+					self.livePhotoModeButton.setTitle(NSLocalizedString("Live Photo: On", comment: "Live photo mode button on title"), for: [])
 				}
 				else {
-					self.livePhotoModeButton.setTitle(NSLocalizedString("Live Photo Mode: Off", comment: "Live photo mode button off title"), for: [])
+					self.livePhotoModeButton.setTitle(NSLocalizedString("Live Photo: Off", comment: "Live photo mode button off title"), for: [])
 				}
 			}
 		}
@@ -676,7 +676,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 		// Enable the Record button to let the user stop the recording.
 		DispatchQueue.main.async { [unowned self] in
 			self.recordButton.isEnabled = true
-			self.recordButton.setTitle(NSLocalizedString("Stop", comment: "Recording button stop title"), for: [])
+			self.recordButton.setTitle(NSLocalizedString("", comment: "Recording button stop title"), for: [])  //  STOP GRAPHIC
 		}
 	}
 	
@@ -751,7 +751,7 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 			self.cameraButton.isEnabled = self.videoDeviceDiscoverySession.uniqueDevicePositionsCount() > 1
 			self.recordButton.isEnabled = true
 			self.captureModeControl.isEnabled = true
-			self.recordButton.setTitle(NSLocalizedString("Record", comment: "Recording button record title"), for: [])
+			self.recordButton.setTitle(NSLocalizedString("", comment: "Recording button record title"), for: [])  // Recording Graphic
 		}
 	}
 	
